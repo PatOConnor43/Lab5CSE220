@@ -11,6 +11,10 @@
 #include "common.h"
 #include "Token.h"
 #include "Print.h"
+#include "Quotes.h"
+#include "Real.h"
+#include "Integer.h"
+#include "Identifier.h"
 
 #define CHAR_TABLE_SIZE 256
 
@@ -41,7 +45,7 @@ private:
     void skipBlanks(char source_buffer[]);
     void skipComment(char source_buffer[]);
     void getWord(char *str, char *token_ptr, Token *tok);
-    void getNumber(char *str, char *token_ptr, Token *tok);
+    Token* getNumber(char *str, char *token_ptr);
     void getString(char *str, char *token_ptr, Token *tok);
     void getSpecial(char *str, char *token_ptr, Token *tok);
     void downshiftWord(char word[]);
