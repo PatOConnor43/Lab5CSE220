@@ -9,16 +9,16 @@
 #define STRING_H_
 #include "Token.h"
 
-class String : public Token
+class Quotes : public Token
 {
 
 	public:
-		String::String() : Token()
+		Quotes::Quotes() : Token()
 		{
 			this->setCode(STRING);
 
 		}
-		String::~String()
+		Quotes::~Quotes()
 		{
 
 		}
