@@ -26,8 +26,8 @@ public:
 
 private:
     //What variables and methods am I missing to implement a binary tree.
-    Token *leftChild;
-    Token *rightChild;
+    Identifier *leftChild;
+    Identifier *rightChild;
     LineNumberList *list;
 };
 
