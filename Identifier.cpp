@@ -77,6 +77,7 @@ void Identifier::print()
     char line[MAX_SOURCE_LINE_LENGTH + 32];
     const char *symbol_string = SYMBOL_STRINGS[this->getCode()];
 
-
+    sprintf(line, "    >> %-16s %-s\n", symbol_string, this->getTokenString().c_str());
+    printf("%s", line);
 
 }
