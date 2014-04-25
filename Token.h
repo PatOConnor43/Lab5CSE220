@@ -22,41 +22,55 @@ class Token
 {
 private:
     TokenCode code;
-    LiteralType type;
-    union
-    {
-        int integer;
-        float real;
-        char *stringLiteral;
-    }
-    literal;
     string tokenString;
-    //What variables and methods am I missing to implement a binary tree.
-    Token *leftChild;
-    Token *rightChild;
-    LineNumberList *list;
+
+
+
+
+//    LiteralType type; //OUT
+//    union //OUT
+//    {
+//        int integer;
+//        float real;
+//        char *stringLiteral;
+//    }
+//    literal;
+
+
+//    //What variables and methods am I missing to implement a binary tree.
+//    Token *leftChild; // OUT
+//    Token *rightChild;
+//    LineNumberList *list;
     
 public:
     Token();
     ~Token();
+
     void setCode(TokenCode newCode);
     TokenCode getCode();
-    void setType(LiteralType newType);
-    LiteralType getType();
-    void setLiteral(int newInteger);
-    int getIntLiteral();
-    void setLiteral(float newReal);
-    float getRealLiteral();
-    void setLiteral(string newString);
-    string getStringLiteral();
     void setTokenString(string s);
     string getTokenString();
-    void setLeftChild(Token *tok);
-    Token *getLeftChild();
-    void setRightChild(Token *tok);
-    Token *getRightChild();
-    void addToLineNumberList(LineNumberList *listItem);
-    LineNumberList *getLineNumberList();
+
+    virtual void print();
+
+
+
+
+//    void setType(LiteralType newType); // OUT
+//    LiteralType getType();
+//    void setLiteral(int newInteger);  // OUT
+//    int getIntLiteral();
+//    void setLiteral(float newReal);
+//    float getRealLiteral();
+//    void setLiteral(string newString);
+//    string getStringLiteral();
+
+//    void setLeftChild(Token *tok); // OUT
+//    Token *getLeftChild();
+//    void setRightChild(Token *tok);
+//    Token *getRightChild();
+//    void addToLineNumberList(LineNumberList *listItem);
+//    LineNumberList *getLineNumberList();
 };
 
 #endif /* defined(__Lab4__Token__) */
