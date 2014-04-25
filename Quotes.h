@@ -22,7 +22,7 @@ class Quotes : public Token
 		{
 
 		}
-		void String::print()
+		void Quotes::print()
 		{
 			char line[MAX_SOURCE_LINE_LENGTH + 32];
 			const char *symbol_string = SYMBOL_STRINGS[this->getCode()];
