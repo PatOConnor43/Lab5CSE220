@@ -1,3 +1,9 @@
+//Vishal Mehta
+//Pat O Connor
+//Nash Kleppan
+//Group 19
+//Lab 5
+//CSE 220 Spring 2014
 //
 //  main.cpp
 //  Lab4
