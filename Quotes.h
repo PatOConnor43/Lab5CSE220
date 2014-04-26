@@ -1,8 +1,14 @@
+//Vishal Mehta
+//Pat O Connor
+//Nash Kleppan
+//Group 19
+//Lab 5
+//CSE 220 Spring 2014
 /*
  * String.h
  *
  *  Created on: Apr 20, 2014
- *      Author: patrick
+ *      Author: Patrick
  */
 
 #ifndef STRING_H_
