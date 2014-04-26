@@ -4,7 +4,7 @@
 #Group 19
 #CSE 220 Spring 2014
 #makefile
-#Lab4
+#Lab5
 #This is the makefile
 
 CrossReference: main.o Identifier.o IdentifierBinaryTree.o LineNumberList.o Print.o Scanner.o Token.o
